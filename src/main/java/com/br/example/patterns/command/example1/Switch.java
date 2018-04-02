@@ -1,4 +1,4 @@
-package com.br.example.patterns.command;
+package com.br.example.patterns.command.example1;
 
 //invoker
 public class Switch {
