@@ -1,6 +1,16 @@
 package com.br.example.patterns.templatemethod.example1;
 
+import com.br.example.patterns.decorator.example1.Imposto;
+
 public class IKCV extends TemplateDeImpostoCondicional {
+	
+	public IKCV() {
+		
+	}
+	
+	public IKCV(Imposto outroImposto) {
+		super(outroImposto);
+	}
 
 	@Override
 	public double minimaTaxacao(Orcamento orcamento) {

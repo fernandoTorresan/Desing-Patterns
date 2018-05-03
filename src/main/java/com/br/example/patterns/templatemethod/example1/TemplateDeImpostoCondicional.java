@@ -1,6 +1,16 @@
 package com.br.example.patterns.templatemethod.example1;
 
-public abstract class TemplateDeImpostoCondicional implements Imposto {
+import com.br.example.patterns.decorator.example1.Imposto;
+
+public abstract class TemplateDeImpostoCondicional extends Imposto {
+	
+	public TemplateDeImpostoCondicional(Imposto outroImposto) {
+		super(outroImposto);
+	}
+	
+	public TemplateDeImpostoCondicional() {
+		
+	}
 
 	public final double calcula(Orcamento orcamento) {
 		

@@ -8,9 +8,12 @@ public class TestCalculaImpostoComposto {
 		
 		Imposto imposto = new ISS(new ICMS());
 		
+		Imposto impostoIssMuitoAlto = new ImpostoMuitoAlto(new ISS());
+		
 		Orcamento orcamento = new Orcamento(500.0);
 		
 		System.out.println(imposto.calcula(orcamento));
+		System.out.println(impostoIssMuitoAlto.calcula(orcamento));
 		
 	}
 }
