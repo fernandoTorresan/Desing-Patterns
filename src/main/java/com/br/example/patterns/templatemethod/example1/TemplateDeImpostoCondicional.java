@@ -2,7 +2,7 @@ package com.br.example.patterns.templatemethod.example1;
 
 public abstract class TemplateDeImpostoCondicional implements Imposto {
 
-	public double calcula(Orcamento orcamento) {
+	public final double calcula(Orcamento orcamento) {
 		
 		if(deveUsarMaximaTaxacao(orcamento)) {
 			return maximaTaxacao(orcamento);

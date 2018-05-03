@@ -1,7 +1,7 @@
 package com.br.example.patterns.templatemethod.example1;
 
 public class ICPP extends TemplateDeImpostoCondicional {
-
+	
 	@Override
 	public double minimaTaxacao(Orcamento orcamento) {
 		return orcamento.getValor() * 0.05;
